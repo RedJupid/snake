@@ -10,7 +10,7 @@
 }
 
 .startPage{
-    width: 100%;
+    width: 1242px;
     height: 699px;
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@
     z-index: 1000;
 }
 .endPage{
-    width: 100%;
+    width: 1242px;
     height: 699px;
     position: absolute;
     top: 0;
@@ -69,7 +69,7 @@
 
 
 .wrapper{
-    width: 100%;
+    width: 1242px;
     height: 699px;
     background-image: url('img/bg.jpg');
     background-size: 100% 100%;
