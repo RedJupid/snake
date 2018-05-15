@@ -1,0 +1,262 @@
+@font-face{
+    font-family: akbar;
+    src:url('fonts/akbar.TTF');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: akbar;
+}
+
+.startPage{
+    width: 100%;
+    height: 699px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid black; */
+    z-index: 1000;
+}
+.endPage{
+    width: 100%;
+    height: 699px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.startPage .startPic{
+    width: 646px;
+    height: 377px;
+    background-image: url('img/welcome.png');
+    /* background-size: 100% 100%; */
+    margin: 100px auto 0;
+}
+
+.startPage .startBtn
+{
+    padding: 0 30px;
+    height: 80px;
+    width: 150px;
+    font-size: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    margin: 40px auto 0;
+    color: #FF9D30;
+    border-radius: 15px;
+}
+
+.endPage .restartBtn{
+    padding: 0 30px;
+    height: 80px;
+    width: 220px;
+    font-size: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    margin: 300px auto;
+    color: #FF9D30;
+    border-radius: 15px;
+}
+
+.startPage .startBtn:hover,
+.endPage .restartBtn:hover{
+    background-color: #FF9D30;
+    color: #fff;
+}
+
+
+
+.wrapper{
+    width: 100%;
+    height: 699px;
+    background-image: url('img/bg.jpg');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.wrapper .map{
+    width: 810px;
+    height: 486px;
+    background-image: url('img/area.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.wrapper .map .head-right{
+    background-image: url('img/head.png');
+    background-size: 100% 100%;
+}
+
+.wrapper .map .head-down{
+    background-image: url('img/head.png');
+    background-size: 100% 100%;
+    transform:rotate(90deg);
+}
+
+.wrapper .map .head-left{
+    background-image: url('img/head.png');
+    background-size: 100% 100%;
+    transform:rotate(180deg);
+}
+
+.wrapper .map .head-up{
+    background-image: url('img/head.png');
+    background-size: 100% 100%;
+    transform:rotate(-90deg);
+}
+
+
+.wrapper .map .body-right42,
+.wrapper .map .body-left02{
+    background-image: url('img/body.png');
+    background-size: 100% 100%;
+}
+
+.wrapper .map .body-down24,
+.wrapper .map .body-up20{
+    background-image: url('img/body.png');
+    background-size: 100% 100%;
+    transform:rotate(90deg);
+}
+
+.wrapper .map .tail-01{
+    background-image: url('img/tail.png');
+    background-size: 100% 100%;
+}
+
+.wrapper .map .tail-10{
+    background-image: url('img/tail.png');
+    background-size: 100% 100%;
+    transform: rotate(90deg);
+}
+
+.wrapper .map .tail-21{
+    background-image: url('img/tail.png');
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+}
+
+.wrapper .map .tail-12{
+    background-image: url('img/tail.png');
+    background-size: 100% 100%;
+    transform: rotate(-90deg);
+}
+
+.wrapper .map .body-right31,
+.wrapper .map .body-down13{
+    background-image: url('img/bend.png');
+    background-size: 100% 100%;
+    transform:rotate(90deg);
+}
+
+.wrapper .map .body-up31,
+.wrapper .map .body-left13{
+    background-image: url('img/bend.png');
+    background-size: 100% 100%;
+    transform:rotate(-90deg);
+}
+
+.wrapper .map .body-right33,
+.wrapper .map .body-up11{
+    background-image: url('img/bend.png');
+    background-size: 100% 100%;
+}
+
+.wrapper .map .body-down33,
+.wrapper .map .body-left11{
+    background-image: url('img/bend.png');
+    background-size: 100% 100%;
+    transform:rotate(180deg);
+}
+
+.wrapper .score-wrapper{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrapper .score-wrapper .score{
+    width: 800px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.wrapper .right-wrapper{
+    width: 810px;
+    height: 486px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.wrapper .right-wrapper .direction{
+    width: 260px;
+    height: 172px;
+    position: absolute;
+    right: -200px;
+    bottom: -100px;
+    /* border: 1px solid black; */
+    z-index: 1000;
+}
+
+.wrapper .right-wrapper .direction .upBtn,
+.wrapper .right-wrapper .direction .leftBtn,
+.wrapper .right-wrapper .direction .downBtn,
+.wrapper .right-wrapper .direction .rightBtn{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    font-size: 60px;
+    background-color: #FF9D30;
+    margin-top: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.wrapper .right-wrapper .direction .upBtn{
+    margin: 0 86px;
+}
+
+.wrapper .right-wrapper .direction .upBtn:hover,
+.wrapper .right-wrapper .direction .leftBtn:hover,
+.wrapper .right-wrapper .direction .downBtn:hover,
+.wrapper .right-wrapper .direction .rightBtn:hover{
+    background-color: #FF6D77;
+    color: #fff;
+}
+
+.wrapper .right-wrapper .pauseBtn{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    background-color: #FF9D30;
+    margin-top: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    z-index: 1000;
+}
+
+.wrapper .right-wrapper .pauseBtn:hover{
+    background-color: #FF6D77;
+    color: #fff;
+}
